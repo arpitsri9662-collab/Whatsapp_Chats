@@ -1,0 +1,27 @@
+body {
+    margin-left: 20px;
+    background-color: limegreen;
+}
+
+.chat{
+    background-color: skyblue;
+    padding: 20px;
+    border-radius: 16px;
+    display: inline-block;
+}
+
+.msg {
+    background-color: blue;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 16px;
+}
+
+h3 {
+    color: red;
+}
+
+#edit {
+    background-color: red;
+    color: black;
+}
