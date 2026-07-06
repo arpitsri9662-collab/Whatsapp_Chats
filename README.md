@@ -30,8 +30,6 @@ whatsapp-chats/
 ├── package.json
 └── README.md
 🚀 How to Run Locally
-# Clone repository
-git clone https://github.com/your-username/whatsapp-chats.git
 
 # Move into project folder
 cd whatsapp-chats
@@ -77,9 +75,3 @@ Environment variable management
 
 This project is open-source and available under the MIT License.
 
-If you want, I can also:
-✅ add badges (stars, forks, deploy button)
-✅ make it more “GitHub trending style”
-✅ or write a shorter 350-character project bio for resume
-
-Just tell me 👍
