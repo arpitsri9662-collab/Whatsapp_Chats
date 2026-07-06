@@ -1,6 +1,11 @@
+if (process.env.NODE_ENV !== "production") {
+    require("dotenv").config();
+}
+
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
+const dbUrl = process.env.ATLASDB_URL;
 const path = require("path");
 const Chat = require("./models/chat.js");
 const methodOverride = require("method-override");
@@ -16,8 +21,9 @@ main().then(() =>{
     console.log("Connection Successful");
 }).catch(err => console.log(err));
 
+
 async function main() {
-    await mongoose.connect('mongodb://127.0.0.1:27017/whatsapp');
+    await mongoose.connect(dbUrl);
 }
 
 //Index Route
@@ -115,6 +121,8 @@ app.use((err, req, res, next) => {
 })
 
 
-app.listen(8080, () => {
-    console.log("App is listening on Port 8080");
+const PORT = process.env.PORT || 8080;
+
+app.listen(PORT, () => {
+    console.log(`Server is listening on port ${PORT}`);
 });
