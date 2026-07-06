@@ -97,7 +97,7 @@ app.delete("/chats/:id", asyncWrap(async (req, res) =>{
 
 app.get("/", (req, res) => {
     console.log("Root is working");
-    res.send("Working on Browser");
+    res.redirect("/chats");
 });
 
 const handleValidationErr = (err) => {
